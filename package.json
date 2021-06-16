@@ -1,0 +1,15 @@
+{
+  "name": "stats-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass styles/style.scss styles/style.css"
+  },
+  "author": "Mohammed Qabbari",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.34.1"
+  }
+}

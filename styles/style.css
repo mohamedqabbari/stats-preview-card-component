@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Inter";
+  src: url(/assets/fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "Lexend Deca";
+  src: url(/assets/fonts/LexendDeca-Regular.ttf);
+}
+body, html {
+  height: 900px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: #090b1a;
+}
+body .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 85%;
+  height: 800px;
+  border-radius: 10px;
+  background-color: #1b1938;
+}
+body .card-body .card-info {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 70%;
+  width: 100%;
+}
+body .card-body .card-info .card-title {
+  color: white;
+  margin: 0;
+  width: 90%;
+  align-self: center;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Inter";
+  font-weight: 700;
+}
+body .card-body .card-info .card-title span {
+  color: #aa5cdb;
+}
+body .card-body .card-info .card-description {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 50px;
+  width: 75%;
+  line-height: 24px;
+  align-self: center;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Inter";
+  font-weight: 400;
+}
+body .card-body .card-info .card-stats {
+  display: flex;
+  flex-direction: column;
+}
+body .card-body .card-info .card-stats .stat {
+  flex-grow: 1;
+  text-align: center;
+  margin-bottom: 30px;
+}
+body .card-body .card-info .card-stats .stat h3 {
+  color: white;
+  margin: 0;
+  font-size: 1.4rem;
+  font-family: "Inter";
+  font-weight: 700;
+}
+body .card-body .card-info .card-stats .stat p {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 2px;
+  font-size: 0.8rem;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+body .card-body .card-image {
+  order: 0;
+  display: flex;
+  position: relative;
+  flex: 30%;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-image: url(/assets/images/image-header-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .card-body .card-image::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: rgba(162, 48, 232, 0.5);
+}
+body .attribution {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  body, html {
+    height: 100% !important;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: row !important;
+    width: 70% !important;
+    height: 400px !important;
+  }
+  .card-body .card-info {
+    order: 0 !important;
+    flex: 1 !important;
+    padding-left: 60px;
+    height: 100%;
+  }
+  .card-body .card-info .card-title {
+    align-self: flex-start !important;
+    text-align: left !important;
+    width: 80% !important;
+    margin-bottom: 12px !important;
+  }
+  .card-body .card-info .card-description {
+    align-self: flex-start !important;
+    text-align: left !important;
+    width: 80% !important;
+  }
+  .card-body .card-info .card-stats {
+    flex-direction: row !important;
+  }
+  .card-body .card-info .card-stats .stat {
+    text-align: left !important;
+    margin-bottom: 0 !important;
+  }
+  .card-body .card-image {
+    order: 1 !important;
+    flex: 1 !important;
+    height: 100%;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0 !important;
+    background-image: url(/assets/images/image-header-desktop.jpg) !important;
+  }
+  .card-body .card-image::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0 !important;
+    background-color: rgba(162, 48, 232, 0.5);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
